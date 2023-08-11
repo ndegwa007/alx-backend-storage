@@ -16,11 +16,13 @@ Folder consist of advanced SQL tasks
 
 
 ### Tasks
-<details>
-<summary><a href="./0-uniq_users.sql">0.We are all unique!</a><summary>
-<a href='https://postimg.cc/SXcMv4Qt' target='_blank'><img src='https://i.postimg.cc/SXcMv4Qt/Screenshot-from-2023-08-11-12-07-17.png' border='0' alt='Screenshot-from-2023-08-11-12-07-17'/></a></details>
 
+<details>
+<summary><a href="./0-uniq_users.sql">0.We are all unique!</a></summary>
+<a href='https://postimg.cc/SXcMv4Qt' target='_blank'><img src='https://i.postimg.cc/SXcMv4Qt/Screenshot-from-2023-08-11-12-07-17.png' border='0' alt='Screenshot-from-2023-08-11-12-07-17'/></a>
+</details>
 
 <details>
 <summary><a href="./1-country_users.sql">1.In and not out</a></summary>
-<a href='https://postimg.cc/yWPgBNzF' target='_blank'><img src='https://i.postimg.cc/yWPgBNzF/Screenshot-from-2023-08-11-12-58-31.png' border='0' alt='Screenshot-from-2023-08-11-12-58-31'/></a></details>
+<a href='https://postimg.cc/yWPgBNzF' target='_blank'><img src='https://i.postimg.cc/yWPgBNzF/Screenshot-from-2023-08-11-12-58-31.png' border='0' alt='Screenshot-from-2023-08-11-12-58-31'/></a>
+</details>
