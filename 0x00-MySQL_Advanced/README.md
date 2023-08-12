@@ -26,3 +26,25 @@ Folder consist of advanced SQL tasks
 <summary><a href="./1-country_users.sql">1.In and not out</a></summary>
 <a href='https://postimg.cc/yWPgBNzF' target='_blank'><img src='https://i.postimg.cc/yWPgBNzF/Screenshot-from-2023-08-11-12-58-31.png' border='0' alt='Screenshot-from-2023-08-11-12-58-31'/></a>
 </details>
+
+<details>
+<summary><a href="./2-fans">2.Best band ever!</a></summary>
+<a href='https://postimg.cc/DJbBVq2h' target='_blank'><img src='https://i.postimg.cc/DJbBVq2h/Screenshot-from-2023-08-12-12-52-41.png' border='0' alt='Screenshot-from-2023-08-12-12-52-41'/></a>
+</details>
+
+<details>
+<summary><a href="./3-glam_rock.sql">3.Old school band</a></summary>
+<a href='https://postimg.cc/68F8jSpM' target='_blank'><img src='https://i.postimg.cc/68F8jSpM/Screenshot-from-2023-08-12-12-55-58.png' border='0' alt='Screenshot-from-2023-08-12-12-55-58'/></a>
+</details>
+
+
+<details>
+<summary><a href="./4-store.sql">4.Buy buy buy</a></summary>
+<a href='https://postimg.cc/3W7Wymqb' target='_blank'><img src='https://i.postimg.cc/3W7Wymqb/Screenshot-from-2023-08-12-12-58-16.png' border='0' alt='Screenshot-from-2023-08-12-12-58-16'/></a>
+</details>
+
+
+<details>
+<summary><a href="./5-valid_email.sql">5.Email validation to sent</a></summary>
+<a href='https://postimg.cc/yDz75Hzp' target='_blank'><img src='https://i.postimg.cc/yDz75Hzp/Screenshot-from-2023-08-12-13-00-58.png' border='0' alt='Screenshot-from-2023-08-12-13-00-58'/></a>
+</details>
