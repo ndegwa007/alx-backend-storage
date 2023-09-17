@@ -27,8 +27,10 @@ def call_history(method: Callable) -> Callable:
 
 
 def count_calls(fn: Callable) -> Callable:
+    """calls the method it wraps"""
     @wraps(fn)
     def wrapper(self, *args, **kwargs):
+        """wraps logic to the method"""
         key = fn.__qualname__
         result = self._redis.get(key)
         if result is None:
