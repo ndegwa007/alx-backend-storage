@@ -34,11 +34,7 @@ def count_calls(fn: Callable) -> Callable:
     def wrapper(self, *args, **kwargs):
         """wraps logic to the method"""
         key = fn.__qualname__
-        result = self._redis.get(key)
-        if result is None:
-            result = 1
-        else:
-            result = int(result) + 1
+        result = self._redis.incr(key)
         self._redis.set(key, result)
         return fn(self, *args, **kwargs)
     return wrapper
