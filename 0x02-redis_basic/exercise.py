@@ -7,8 +7,10 @@ from functools import wraps
 
 
 def call_history(method: Callable) -> Callable:
+    """decorator for method"""
     @wraps(method)
     def wrapper(self, *args, **kwargs):
+        """inner wrapper func"""
         input_key = f"{method.__qualname__}:inputs"
         output_key = f"{method.__qualname__}:outputs"
 
@@ -37,8 +39,8 @@ def count_calls(fn: Callable) -> Callable:
             result = 1
         else:
             result = int(result) + 1
-        self._redis.set(key, str(result).encode('utf-8'))
-        return str(result).encode('utf-8')
+        self._redis.set(key, result)
+        return fn(self, *args, **kwargs)
     return wrapper
 
 
@@ -49,6 +51,7 @@ class Cache:
         self._redis = redis.Redis()
         self._redis.flushdb()
 
+    @call_history
     @count_calls
     def store(self, data: Union[str, bytes, int, float]) -> str:
         """returns key to the data"""
