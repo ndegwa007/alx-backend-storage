@@ -73,3 +73,20 @@ class Cache:
     def get_int(key: str) -> int:
         """convert to int"""
         return self.get(key, fn=lambda d: int(d))
+
+    def replay(self, method: Callable) -> str:
+        """display history of calls"""
+        method_name = "Cache." + method.__name__
+        input_key = f"{method.__qualname__}:inputs"
+        output_key = f"{method.__qualname__}:outputs"
+        input_history = self._redis.lrange(input_key, 0, -1)
+        output_history = self._redis.lrange(output_key, 0, -1)
+        call_times = len(input_history)
+        call_string = []
+        for input_data, output_key in zip(input_history, output_history):
+            input_data = input_data.decode('utf-8')
+            output_key = output_key.decode('utf-8')
+            call_string.append(f"{method_name}(*{input_data}) -> {output_key}")
+        replay_str = f"{method_name} was called {call_times} times:\n"
+        replay_str += "\n".join(call_string)
+        return replay_str
