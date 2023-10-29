@@ -1,3 +1,3 @@
 // update documents with {name: "Holberton school"} in a collection
-db.school.updateOne({name: "Holberton school"}, { $set: {address: "972 Mission street"} }, {upsert: true})
+db.school.update({name: "Holberton school"}, { $set: {address: "972 Mission street"} }, {upsert: true})
 
