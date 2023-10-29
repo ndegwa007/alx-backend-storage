@@ -1,0 +1,2 @@
+// create a mongo db
+use my_db && exit
