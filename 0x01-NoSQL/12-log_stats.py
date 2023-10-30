@@ -16,11 +16,11 @@ def logs_count():
 
     status_count = nginx_collection.count_documents({'path': '/status'})
     return f"{total_count} logs \nMethods:\n\
-method GET: {get_count} \n\
-method POST: {post_count} \n\
-method PUT: {put_count} \n\
-method PATCH: {patch_count} \n\
-method DELETE: {delete_count} \n\
+method GET: {get_count}\n\
+method POST: {post_count}\n\
+method PUT: {put_count}\n\
+method PATCH: {patch_count}\n\
+method DELETE: {delete_count}\n\
 {status_count} status check"
 
 
