@@ -1,0 +1,2 @@
+// use regex to list documents in a collection 
+db.school.find({name: {$regex: /^Holberton/}})
