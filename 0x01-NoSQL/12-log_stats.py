@@ -15,7 +15,7 @@ def logs_count():
     total_count = nginx_collection.count_documents({})
 
     status_count = nginx_collection.count_documents({'path': '/status'})
-    return f"{total_count} logs \nMethods:\n\
+    return f"{total_count} logs \nMethods: \n\
 method GET: {get_count}\n\
 method POST: {post_count}\n\
 method PUT: {put_count}\n\
